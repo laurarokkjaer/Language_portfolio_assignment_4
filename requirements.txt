@@ -1,0 +1,4 @@
+The follwing is the installment requirements in order for the code to work. 
+Should be installed from the command line before running the .py script(s). 
+
+Import:
