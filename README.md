@@ -33,9 +33,7 @@ The assignment for this week builds on these concepts and techniques. We're goin
 The goal of this assignment was to show that I can perform text classification using both classical machine learning approaches, as well as using more sophisticated deep learning approaches. The scripts that I create for this assignment can also be reused and modified for use on other text data in a tabular format.
 
 ### Data source
-The data used in this assignment is the in class flowers-folder from UCloud (shared-drive/CDS-VIS/flowers). 
-
-Link to flowers dataset: [flowers dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html).
+The data used in this assignment is the in class flowers-folder from UCloud (shared-drive/CDS-VIS/toxic/VideoCommentsThreatCorpus.csv)
 
 
 ## Methods
@@ -57,8 +55,6 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-The result of this script is an image which contains one target flower image and the calculated three similar images, as well as the calculated distance scores of the images. Furthermore, a csv file is made with the results (similar images). 
-
-For further development, it could have been interesting to look at how to make the script run with a user defined input. Since this code have already been through a transision from jupiter notebook to .py script, it would not have been much change to do. For the user to parse an argument via the command line when running the code, the script would have been more reproduceble/reuseble, because of the fact that the user wpuld be able to define the target image themselves. 
+The result of this script is two .txt files which shows the classification report using logistic_regression and the classification report using deep_learning. The report of the logistic_regression has an accuracy of 
 
 
