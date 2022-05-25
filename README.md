@@ -37,7 +37,7 @@ The data used in this assignment is the in class flowers-folder from UCloud (sha
 
 
 ## Methods
-To solve this assignment i have worked with ```opencv``` in order to both calculate the histograms as well as for the general image processing (using the ```calcHist```, ```imread```, ```normalize``` and ```compareHist```). Futhermore i used the ```jimshow``` and ```jimshow_channel``` from the ```utils```-folder, along with the ```matplotlib``` for plotting and visualisation.
+To solve this assignment i have worked with the ```utils``` classifier function and ```sklaearn``` in order to both perform ```train_test_split```, ```TfidVectorizer```, ```LogisticRegression```. Also using ```tensorflow``` for modelbuilding and at last using ```matplotlib```for visualisation. 
 
 ## Usage (reproducing results)
 These are the steps you will need to follow in order to get the script running and working:
@@ -55,6 +55,6 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-The result of this script is two .txt files which shows the classification report using logistic_regression and the classification report using deep_learning. The report of the logistic_regression has an accuracy of 78% and the convelutional neural network (deep learning) classification as an accuracy of 
+The result of this script is two .txt files which shows the classification report using logistic_regression and the classification report using deep_learning. The report of the logistic_regression has an accuracy of 78% and the convelutional neural network (deep learning) classification as an accuracy of 76%. 
 
 
