@@ -123,23 +123,13 @@ def deep_learning():
     X_test_pad = sequence.pad_sequences(X_test_seqs, maxlen = MAX_SEQUENCE_LENGTH)
     
     
-    # Encode lables (what is most efficient in this case, not lb)
-    #lb = LabelBinarizer()
-    #y_train = lb.fit_transform(y_train)
-    #y_test = lb.fit_transform(y_test)
-    
-    # Clearing the lb model, so that we can use the encoder instead 
-    #import tensorflow as tf
-    #tf.keras.backend.clear_session()
-    
-    
     # Define parameters for model 
     # Overall vocabulary size 
     VOCAB_SIZE = len(t.word_index)
     # Number of dimensions for embeddings 
     EMBED_SIZE = 300 
     # Number of epochs to train fro 
-    EPOCHS = 2
+    EPOCHS = 10
     # Batch size for training
     BATCH_SIZE = 128
 
@@ -193,8 +183,6 @@ def deep_learning():
     #print(f"Accuracy: {scores[1]}")
     
     predictions = (model.predict(X_test_pad) > 0.5).astype("int32")
-    #predictions = ["toxic" if item == 1 else "non-toxic" for item in predictions]
-    #print(predictions[:10])
     
     # Print classification report 
     labels = ["non-toxic", "toxic"]
