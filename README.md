@@ -48,7 +48,7 @@ These are the steps you will need to follow in order to get the script running a
 
       - cd src (changing the directory to the src folder in order to run the script)
       
-      - python image_search.py (calling the function within the script)
+      - python logistic_regression.py or deep_learning.py (calling the function within the script)
       
 - when processed, there will be a messagge saying that the script has succeeded and that the outputs can be seen in the output folder 
 
