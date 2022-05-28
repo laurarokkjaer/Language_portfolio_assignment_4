@@ -55,6 +55,6 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-The result of this script is two .txt files which shows the classification report using logistic_regression and the classification report using deep_learning. The report of the logistic_regression has an accuracy of 78% and the convelutional neural network (deep learning) classification as an accuracy of 76%. 
+The result of this script is two .txt files which shows the classification report using logistic_regression and the classification report using deep_learning. The report of the logistic_regression has an accuracy of 78% and the convelutional neural network (deep learning) classification as an accuracy of 89%. 
 
 
