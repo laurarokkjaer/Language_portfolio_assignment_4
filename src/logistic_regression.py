@@ -1,7 +1,7 @@
 # system tools
 import os
 import sys
-sys.path.append(os.path.join(".."))
+sys.path.append(os.path.join("utils"))
 
 # data munging tools
 import pandas as pd
@@ -29,7 +29,7 @@ if not sys.warnoptions:
     
 def logistic_regression():
     # Defining filepath 
-    filename = os.path.join("..", "..", "CDS-LANG", "toxic", "VideoCommentsThreatCorpus.csv")
+    filename = os.path.join("input", "VideoCommentsThreatCorpus.csv")
     # Reading the data, defining what column i want to start the data with 
     data = pd.read_csv(filename)
     
@@ -80,7 +80,7 @@ def logistic_regression():
     print(report)
 
     # Save report 
-    with open('../output/logistic_regression.txt', 'w') as my_txt_file:
+    with open('output/logistic_regression.txt', 'w') as my_txt_file:
         my_txt_file.write(report)
     
     print("Script succeeded, results can be seen in output-folder")
