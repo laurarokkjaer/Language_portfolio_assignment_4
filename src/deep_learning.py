@@ -2,7 +2,7 @@
 import re
 import os
 import sys
-sys.path.append(os.path.join(".."))
+sys.path.append(os.path.join("utils"))
 import tqdm
 import unicodedata
 import contractions
@@ -80,7 +80,7 @@ def pre_process_corpus(docs):
 def deep_learning():
     # Loading dataset
     # defining filepath 
-    filename = os.path.join("..", "..", "CDS-LANG", "toxic", "VideoCommentsThreatCorpus.csv")
+    filename = os.path.join("input", "VideoCommentsThreatCorpus.csv")
     # reading the data, defining what column i want to start the data with 
     dataset = pd.read_csv(filename)
     # Rename from 1/0 to toxic/non toxic 
@@ -190,7 +190,7 @@ def deep_learning():
     print(report)
     
     # Save classification report 
-    with open('../output/toxic_or_not.txt', 'w') as my_txt_file:
+    with open('output/toxic_or_not.txt', 'w') as my_txt_file:
         my_txt_file.write(report)
         
     print("Script succeeded, results can be seen in output-folder")
